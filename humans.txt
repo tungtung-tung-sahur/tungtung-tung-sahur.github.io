@@ -1,0 +1,18 @@
+/* TEAM */
+    Site: Tung Tung Tung Sahur Fan Site
+    Role: Unofficial fan project, informational resource
+    Contact: https://tungtung-tung-sahur.github.io/contact/
+    Location: Global
+
+/* SITE */
+    Language: English
+    Doctype: HTML5
+    Standards: HTML5, CSS3, Semantic markup
+    Components: Vanilla JavaScript, no frameworks
+    Software: Hand-coded, hand-edited
+    Purpose: Document and explain the Tung Tung Tung Sahur character, its origin, and the games built around it
+    Type: Unofficial fan site — not affiliated with any creator or studio
+
+/* THANKS */
+    Original creator: Noxa (@noxaasht)
+    Community: All the fan artists, editors, and researchers who documented the character's history
