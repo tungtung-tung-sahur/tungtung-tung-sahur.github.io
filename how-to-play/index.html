@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self'; connect-src 'self' https:;">
+    <title>Tung Tung Tung Sahur: How to Play – Controls & Mechanics Guide</title>
+    <meta name="description" content="Full guide to playing Tung Tung Tung Sahur. Learn WASD controls, metal detector timing, bread baking, and how to avoid the wooden kentongan on every map.">
+    <meta name="keywords" content="tung tung tung sahur how to play, tung tung sahur controls, tung tung sahur gameplay, metal detector guide, hide and seek adventure guide, sahur game mechanics">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Tung Tung Tung Sahur Fan Site">
+    <meta name="theme-color" content="#0d0620">
+    <link rel="canonical" href="https://tungtung-tung-sahur.github.io/how-to-play/">
+    <link rel="icon" type="image/png" href="images/favicon.png" alt="">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta property="og:title" content="Tung Tung Tung Sahur: How to Play – Controls & Mechanics Guide">
+    <meta property="og:description" content="Learn WASD controls, metal detector timing, bread baking, and how to avoid the wooden kentongan.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://tungtung-tung-sahur.github.io/how-to-play/">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tung Tung Tung Sahur how to play guide cover">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tung Tung Tung Sahur: How to Play – Controls & Mechanics Guide">
+    <meta name="twitter:description" content="Full controls, mechanics, and survival tactics for Tung Tung Tung Sahur.">
+    <meta name="twitter:image" content="images/og-image.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tungtung-tung-sahur.github.io/" },
+            { "@type": "ListItem", "position": 2, "name": "How to Play", "item": "https://tungtung-tung-sahur.github.io/how-to-play/" }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Play Tung Tung Tung Sahur",
+        "description": "Step-by-step guide to controls, mechanics, and survival tactics in Tung Tung Tung Sahur.",
+        "totalTime": "PT15M",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "0"
+        },
+        "tool": [
+            { "@type": "HowToTool", "name": "Metal detector" },
+            { "@type": "HowToTool", "name": "Oven" },
+            { "@type": "HowToTool", "name": "Truck" }
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Bake Ramadan Bread",
+                "text": "Collect three ingredients near the truck and bake bread. A perfect loaf earns 12 coins; a rushed one earns 5.",
+                "url": "https://tungtung-tung-sahur.github.io/how-to-play/#bake"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Scan with Metal Detector",
+                "text": "Use the metal detector to locate buried relics. Short pulses preserve battery. Save at least 10 pulses for the final minutes.",
+                "url": "https://tungtung-tung-sahur.github.io/how-to-play/#scan"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Avoid the Kentongan",
+                "text": "The wooden character only reacts to movement. Crouch behind trees and watch one full patrol cycle before crossing open ground.",
+                "url": "https://tungtung-tung-sahur.github.io/how-to-play/#avoid"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Dig and Escape",
+                "text": "Dig up the Golden Statue and return to the truck. You have 3 lives per run. The secret ending requires finding every hidden relic.",
+                "url": "https://tungtung-tung-sahur.github.io/how-to-play/#dig"
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        }
+        body {
+            font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+            background: #0d0620;
+            background-image:
+                radial-gradient(ellipse at 15% 0%, rgba(255, 0, 128, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 85% 20%, rgba(0, 212, 255, 0.12) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 100%, rgba(255, 200, 0, 0.08) 0%, transparent 60%);
+            background-attachment: fixed;
+            color: #f0f0ff;
+            line-height: 1.7;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        h1, h2, h3, h4, h5, h6, .logo, .section-title, .fullscreen-btn { font-family: 'Orbitron', sans-serif; }
+        a { color: #00e5ff; text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: #ff2d95; }
+        a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px solid #00e5ff; outline-offset: 3px; border-radius: 6px; }
+        img { max-width: 100%; height: auto; display: block; }
+        .skip-link { position: absolute; left: -9999px; top: 0; background: #ff2d95; color: #fff; padding: 12px 20px; z-index: 10000; font-weight: 700; border-radius: 0 0 10px 0; }
+        .skip-link:focus { left: 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background: rgba(13, 6, 32, 0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255, 45, 149, 0.25); position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 30px rgba(255, 45, 149, 0.08); }
+        .nav-wrap { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+        .logo { font-size: 1.2rem; font-weight: 900; background: linear-gradient(90deg, #ff2d95, #ffc800, #00e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.4px; white-space: nowrap; flex-shrink: 0; }
+        nav { flex-shrink: 1; min-width: 0; }
+        nav ul { list-style: none; display: flex; gap: 2px; align-items: center; justify-content: flex-end; }
+        nav ul li a, nav ul li .more-toggle { color: #d0d0e8; font-family: 'Rajdhani', sans-serif; font-size: 0.88rem; font-weight: 600; padding: 8px 11px; border-radius: 9px; transition: all 0.3s ease; white-space: nowrap; display: inline-flex; align-items: center; gap: 5px; }
+        nav ul li a:hover, nav ul li .more-toggle:hover, nav ul li a.active, nav ul li .more-toggle.active { background: linear-gradient(135deg, rgba(255, 45, 149, 0.25), rgba(0, 229, 255, 0.2)); color: #fff; box-shadow: 0 0 20px rgba(255, 45, 149, 0.3); }
+        .dropdown { position: relative; }
+        .dropdown > a::after { content: " ▾"; font-size: 0.65rem; }
+        .dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: linear-gradient(145deg, #1a0d35, #12082a); border: 1px solid rgba(255, 45, 149, 0.4); border-radius: 14px; padding: 8px; min-width: 250px; box-shadow: 0 12px 50px rgba(255, 45, 149, 0.25), 0 0 30px rgba(0, 229, 255, 0.1); z-index: 1001; }
+        .dropdown:hover .dropdown-menu, .dropdown:focus-within .dropdown-menu, .dropdown.open .dropdown-menu { display: block; }
+        .dropdown-menu a { display: flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 8px; font-size: 0.85rem; }
+        .dropdown-menu a:hover { background: linear-gradient(135deg, rgba(255, 45, 149, 0.2), rgba(0, 229, 255, 0.15)); color: #fff; }
+        .mobile-toggle { display: none; background: linear-gradient(135deg, #ff2d95, #ffc800); border: none; color: #fff; font-size: 1.4rem; padding: 6px 12px; border-radius: 10px; cursor: pointer; flex-shrink: 0; }
+
+        .page-header { text-align: center; padding: 50px 20px 20px; }
+        .page-header h1 { font-size: clamp(1.8rem, 5vw, 3rem); font-weight: 900; background: linear-gradient(120deg, #ff2d95 0%, #ffc800 35%, #00e5ff 70%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 14px; line-height: 1.15; letter-spacing: -1px; filter: drop-shadow(0 4px 30px rgba(255, 45, 149, 0.4)); }
+        .page-header p { font-size: 1.05rem; color: #b8b8d8; max-width: 700px; margin: 0 auto; }
+
+        .section-title { text-align: center; font-size: clamp(1.4rem, 3.5vw, 2rem); font-weight: 900; margin: 50px 0 10px; background: linear-gradient(90deg, #ff2d95, #ffc800, #00e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.5px; filter: drop-shadow(0 2px 15px rgba(255, 45, 149, 0.25)); }
+        .section-title .title-emoji { display: block; font-size: 2rem; margin-bottom: 6px; -webkit-text-fill-color: initial; background: none; filter: none; }
+        .section-sub { text-align: center; color: #a8a8c8; max-width: 680px; margin: 0 auto 28px; font-size: 0.95rem; }
+
+        .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 30px 0; }
+        .step-card { background: linear-gradient(160deg, #1a0d35 0%, #14082c 100%); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 16px; padding: 24px 20px; text-align: center; transition: all 0.35s; }
+        .step-card:hover { border-color: rgba(255, 45, 149, 0.6); transform: translateY(-5px); }
+        .step-num { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #ff2d95, #a855f7); font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 1.1rem; color: #fff; margin-bottom: 14px; box-shadow: 0 4px 18px rgba(255, 45, 149, 0.4); }
+        .step-card h3 { font-size: 0.95rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+        .step-card p { font-size: 0.82rem; color: #a8a8c8; }
+
+        .controls-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin: 30px 0; }
+        .control-block { background: linear-gradient(145deg, #1a0d35 0%, #18082f 100%); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 18px; padding: 28px 26px; transition: all 0.35s ease; position: relative; overflow: hidden; }
+        .control-block::after { content: ""; position: absolute; top: -50%; right: -30%; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255, 45, 149, 0.2) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+        .control-block:nth-child(2)::after { background: radial-gradient(circle, rgba(0, 229, 255, 0.2) 0%, transparent 70%); }
+        .control-block:hover { transform: translateY(-5px); border-color: rgba(255, 45, 149, 0.6); box-shadow: 0 12px 40px rgba(255, 45, 149, 0.2), 0 0 25px rgba(0, 229, 255, 0.1); }
+        .control-block h3 { font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .control-block h3 .icon { font-size: 1.6rem; }
+        .control-block ul { list-style: none; }
+        .control-block ul li { padding: 8px 0; border-bottom: 1px solid rgba(168, 85, 247, 0.1); font-size: 0.92rem; color: #c0c0d8; display: flex; justify-content: space-between; gap: 12px; }
+        .control-block ul li:last-child { border-bottom: none; }
+        .control-block ul li span:first-child { color: #ffc800; font-weight: 700; }
+
+        .mechanics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin: 30px 0; }
+        .mech-card { background: linear-gradient(160deg, #1a0d35 0%, #14082c 100%); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 18px; overflow: hidden; transition: all 0.35s ease; display: flex; flex-direction: column; }
+        .mech-card:hover { transform: translateY(-8px); border-color: rgba(255, 45, 149, 0.6); box-shadow: 0 15px 45px rgba(255, 45, 149, 0.25), 0 0 30px rgba(0, 229, 255, 0.15); }
+        .mech-card img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #1e1030; }
+        .mech-body { padding: 20px 22px 24px; flex: 1; display: flex; flex-direction: column; }
+        .mech-body h3 { font-size: 1.05rem; font-weight: 800; color: #fff; margin-bottom: 8px; }
+        .mech-body p { font-size: 0.88rem; color: #a8a8c8; flex: 1; margin-bottom: 14px; }
+        .mech-link { font-weight: 700; font-size: 0.87rem; background: linear-gradient(90deg, #ff2d95, #00e5ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.3s ease; }
+        .mech-link:hover { gap: 10px; }
+
+        .tips-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin: 30px 0; }
+        .tip-item { background: linear-gradient(145deg, #1a0d35 0%, #18082f 100%); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 14px; padding: 22px 24px; transition: all 0.3s; }
+        .tip-item:hover { border-color: rgba(255, 45, 149, 0.5); }
+        .tip-item h3 { font-size: 1rem; font-weight: 800; color: #fff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .tip-item h3 .icon { font-size: 1.4rem; }
+        .tip-item p { font-size: 0.9rem; color: #a8a8c8; }
+
+        .mistakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 30px 0; }
+        .mistake-card { background: linear-gradient(160deg, #1a0d35 0%, #14082c 100%); border: 1px solid rgba(255, 45, 149, 0.3); border-radius: 16px; padding: 24px 20px; text-align: center; transition: all 0.35s; }
+        .mistake-card:hover { border-color: rgba(255, 45, 149, 0.7); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(255, 45, 149, 0.2); }
+        .mistake-card .icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+        .mistake-card h3 { font-size: 0.95rem; font-weight: 800; color: #ff2d95; margin-bottom: 8px; }
+        .mistake-card p { font-size: 0.85rem; color: #a8a8c8; }
+
+        .disclaimer { max-width: 900px; margin: 40px auto; padding: 20px 24px; background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.25); border-radius: 14px; text-align: center; font-size: 0.82rem; color: #9090a8; line-height: 1.6; }
+        .disclaimer strong { color: #a8a8c8; }
+
+        .back-link { display: block; text-align: center; margin: 30px auto 0; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.9rem; color: #00e5ff; transition: color 0.3s; }
+        .back-link:hover { color: #ff2d95; }
+
+        .to-top { position: fixed; right: 24px; bottom: 24px; width: 52px; height: 52px; border-radius: 50%; border: none; background: linear-gradient(135deg, #ff2d95, #a855f7, #00e5ff); background-size: 200% 200%; animation: gradShift 4s ease infinite; color: #fff; font-size: 1.4rem; font-weight: 900; cursor: pointer; box-shadow: 0 6px 30px rgba(255, 45, 149, 0.5); opacity: 0; visibility: hidden; transform: translateY(20px); transition: all 0.35s ease; z-index: 900; display: flex; align-items: center; justify-content: center; }
+        .to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        .to-top:hover { transform: translateY(-4px) scale(1.08); box-shadow: 0 10px 40px rgba(255, 45, 149, 0.7); }
+        @keyframes gradShift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+
+        footer { background: linear-gradient(180deg, #0d0620 0%, #150a2e 100%); border-top: 1px solid rgba(255, 45, 149, 0.25); margin-top: 70px; padding: 55px 20px 30px; position: relative; }
+        footer::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #ff2d95, #ffc800, #00e5ff, #a855f7); }
+        .footer-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 35px; }
+        .footer-col h4 { font-size: 0.9rem; font-weight: 800; margin-bottom: 18px; background: linear-gradient(90deg, #ff2d95, #ffc800); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 10px; }
+        .footer-col ul li a { color: #a8a8c8; font-size: 0.87rem; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; }
+        .footer-col ul li a:hover { color: #00e5ff; transform: translateX(4px); }
+        .footer-bottom { max-width: 1200px; margin: 35px auto 0; padding-top: 22px; border-top: 1px solid rgba(168, 85, 247, 0.15); text-align: center; font-size: 0.82rem; color: #7070a0; }
+        .footer-bottom p + p { margin-top: 8px; font-size: 0.78rem; }
+
+        @media (max-width: 1100px) { nav ul li a, nav ul li .more-toggle { font-size: 0.82rem; padding: 7px 9px; } .logo { font-size: 1.05rem; } }
+        @media (max-width: 992px) { .mechanics-grid { grid-template-columns: repeat(2, 1fr); } .mistakes-grid { grid-template-columns: repeat(2, 1fr); } .tips-list { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 900px) {
+            .nav-wrap { padding: 12px 16px; }
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #150a2e; flex-direction: column; align-items: stretch; padding: 14px; border-bottom: 1px solid rgba(255, 45, 149, 0.3); gap: 4px; }
+            nav ul.show { display: flex; }
+            nav ul li a, nav ul li .more-toggle { display: flex; padding: 12px 16px; font-size: 0.9rem; }
+            .mobile-toggle { display: block; }
+            .dropdown-menu { position: static; display: block; background: transparent; border: none; box-shadow: none; padding-left: 16px; min-width: 0; }
+            .controls-grid, .steps-grid, .mechanics-grid, .mistakes-grid, .footer-grid { grid-template-columns: 1fr; }
+            .to-top { right: 16px; bottom: 16px; width: 46px; height: 46px; }
+        }
+        @media (max-width: 480px) { .container { padding: 0 14px; } .nav-wrap { padding: 10px 14px; } .logo { font-size: 0.95rem; } }
+    
+        .dropdown > .more-toggle { border: 0; background: transparent; cursor: pointer; font: inherit; }
+        .dropdown > .more-toggle::after { content: " ▾"; font-size: 0.65rem; }
+        .dropdown:has(> .more-toggle):not(.open) > .dropdown-menu { display: none; }
+        .dropdown:has(> .more-toggle).open > .dropdown-menu { display: block; }
+    </style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7305083056611385"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+        <div class="nav-wrap">
+            <a href="/" class="logo">Tung Tung Tung Sahur</a>
+            <button type="button" class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+            <nav id="mainNav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="/">🏠 Home</a></li>
+                    <li><a href="/about/">📖 About</a></li>
+                    <li><a href="/how-to-play/" class="active">🎮 How to Play</a></li>
+                    <li><a href="/characters/">👹 Characters</a></li>
+                    <li class="dropdown">
+                        <a href="/similar-games/" aria-haspopup="true" aria-expanded="false">🎯 Similar Games</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="/similar-games/backrooms-escape/" role="menuitem">🚪 Backrooms Escape</a>
+                            <a href="/similar-games/granny-adventure/" role="menuitem">👵 Granny Adventure</a>
+                            <a href="/similar-games/fnaf/" role="menuitem">🐻 Five Nights at Freddy's</a>
+                            <a href="/similar-games/steal-a-brainrot/" role="menuitem">🦹 Steal a Brainrot</a>
+                            <a href="/similar-games/italian-brainrot-quiz/" role="menuitem">🧠 Brainrot Quiz</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <button type="button" class="more-toggle" aria-haspopup="true" aria-expanded="false">📂 More</button>
+                        <div class="dropdown-menu" role="menu">
+                            <a href="/tips/" role="menuitem">💡 Tips & Strategies</a>
+                            <a href="/locations/" role="menuitem">🗺️ Locations</a>
+                            <a href="/items/" role="menuitem">🎒 Items</a>
+                            <a href="/updates/" role="menuitem">🔄 Updates</a>
+                            <a href="/achievements/" role="menuitem">🏆 Achievements</a>
+                            <a href="/memes/" role="menuitem">😂 Memes</a>
+                            <a href="/music/" role="menuitem">🎵 Music & Sounds</a>
+                            <a href="/faq/" role="menuitem">❓ FAQ</a>
+                            <a href="/glossary/" role="menuitem">📚 Glossary</a>
+                            <a href="/comparison/" role="menuitem">📊 Version Comparison</a>
+                            <a href="/system-requirements/" role="menuitem">💻 System Requirements</a>
+                            <a href="/community/" role="menuitem">👥 Community</a>
+                            <a href="/contact/" role="menuitem">📧 Contact</a>
+                            <a href="/privacy/" role="menuitem">🔒 Privacy Policy</a>
+                            <a href="/terms/" role="menuitem">📜 Terms of Service</a>
+                            <a href="/disclaimer/" role="menuitem">⚖️ Disclaimer</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <h1>How to Play Tung Tung Tung Sahur</h1>
+        <p>Every mechanic you need to survive the Dark Forest, outsmart the wooden kentongan, and dig up the Golden Statue. Controls, timing, and the mistakes that end most runs early.</p>
+    </section>
+
+    <main class="container" id="main-content">
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">🎮</span> Controls: PC and Mobile</h2>
+        <p class="section-sub">The game uses a standard third-person control scheme. Desktop and mobile layouts map to the same actions.</p>
+
+        <div class="controls-grid">
+            <div class="control-block">
+                <h3><span class="icon" aria-hidden="true">🖥️</span> PC Controls</h3>
+                <ul>
+                    <li><span>Move</span><span>WASD or Arrow Keys</span></li>
+                    <li><span>Look Around</span><span>Mouse</span></li>
+                    <li><span>Run</span><span>Hold Shift</span></li>
+                    <li><span>Interact / Pick Up</span><span>E</span></li>
+                    <li><span>Pause / Unlock Cursor</span><span>Esc</span></li>
+                </ul>
+            </div>
+            <div class="control-block">
+                <h3><span class="icon" aria-hidden="true">📱</span> Mobile Controls</h3>
+                <ul>
+                    <li><span>Move</span><span>On-screen Joystick</span></li>
+                    <li><span>Look Around</span><span>Drag Finger</span></li>
+                    <li><span>Run</span><span>Tap and Hold</span></li>
+                    <li><span>Interact</span><span>Tap Hand Icon</span></li>
+                    <li><span>Pause</span><span>Pause Button</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">⚙️</span> Core Mechanics: How Each System Works</h2>
+        <p class="section-sub">Four systems run simultaneously. Understanding how they interact is the difference between an 8-minute run and a 15-minute run.</p>
+
+        <div class="mechanics-grid">
+            <div class="mech-card">
+                <img src="images/how-bread.png" alt="Baking Ramadan bread in Tung Tung Tung Sahur earns coins for upgrades" loading="lazy">
+                <div class="mech-body">
+                    <h3>🥖 Bread Baking</h3>
+                    <p>Three ingredients spawn near the truck each run. Bake them into Ramadan bread and load it onto the truck for coins. A perfect loaf earns 12 coins. A rushed one earns 5. The timing window is roughly four seconds — miss it and you lose half the profit.</p>
+                    <a href="/items/" class="mech-link">See all items →</a>
+                </div>
+            </div>
+            <div class="mech-card">
+                <img src="images/how-detector.png" alt="Metal detector scanning for buried relics in Tung Tung Tung Sahur" loading="lazy">
+                <div class="mech-body">
+                    <h3>🔍 Metal Detector</h3>
+                    <p>The detector has 40 pulses per run. Each pulse tells you which direction to dig. Holding the button drains the battery in 15 seconds. Short taps preserve pulses. Save at least 10 for the final three minutes, when the Golden Statue's signal finally spikes.</p>
+                    <a href="/items/metal-detector/" class="mech-link">Metal detector guide →</a>
+                </div>
+            </div>
+            <div class="mech-card">
+                <img src="images/how-stealth.png" alt="Crouching behind trees to avoid the wooden kentongan in Tung Tung Tung Sahur" loading="lazy">
+                <div class="mech-body">
+                    <h3>👁️ Stealth System</h3>
+                    <p>The kentongan cannot hear you. He only reacts to movement. Crouching behind a tree breaks line-of-sight and makes you invisible. Sprinting across an open field is what ends most runs. Watch one full patrol cycle before crossing any gap.</p>
+                    <a href="/tips/avoid-sahur/" class="mech-link">Stealth tactics →</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">🛡️</span> Survival Tactics That Actually Work</h2>
+        <p class="section-sub">Six habits that separate players who reach the Graveyard from those who restart the Dark Forest.</p>
+
+        <div class="tips-list">
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">🔄</span> Watch One Full Patrol Cycle</h3>
+                <p>Every map has a fixed patrol loop. Stay behind cover for a complete cycle before moving. Once you know the timing, you can cross open ground on foot without sprinting once.</p>
+            </div>
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">🔋</span> Pulse the Detector, Never Hold</h3>
+                <p>Holding the scan button drains the battery in 15 seconds. Tapping it gives you all 40 pulses. The statue's signal only spikes in the final minutes — that's when you need the battery most.</p>
+            </div>
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">🍞</span> Perfect Bakes Pay for Upgrades</h3>
+                <p>A perfect loaf is 12 coins. A burnt one is 2. Same ingredients. The lucky charm — a fourth life for your next run — pays for itself after three perfect bakes.</p>
+            </div>
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">🪦</span> Graveyard: Slow Down, Not Speed Up</h3>
+                <p>Fog limits visibility to a few meters and the patrol moves faster. The instinct is to rush. The correct move is to move less and listen more. Audio cues reveal both the patrol and the bone charm.</p>
+            </div>
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">🔔</span> Church Bell: Prepare Before You Enter</h3>
+                <p>The bell rings once and redirects the patrol toward the village. You have about 30 seconds. Know your exit route before you trigger it — not after.</p>
+            </div>
+            <div class="tip-item">
+                <h3><span class="icon" aria-hidden="true">💎</span> Save 10 Pulses for the Final Dig</h3>
+                <p>The Golden Statue does not show up on the detector until the last few minutes. If you spent all 40 pulses early, you'll be digging blind while the patrol closes in.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">🚫</span> Three Mistakes That End Most Runs</h2>
+        <p class="section-sub">These are the three behaviors that account for the highest number of early failures.</p>
+
+        <div class="mistakes-grid">
+            <div class="mistake-card">
+                <span class="icon" aria-hidden="true">🏃</span>
+                <h3>Sprinting in the Open</h3>
+                <p>The kentongan reacts to movement, not sound. A crouched player behind a tree is invisible. A sprinting player in a clearing is a target. If you can see the sky, you can probably be seen.</p>
+            </div>
+            <div class="mistake-card">
+                <span class="icon" aria-hidden="true">🔋</span>
+                <h3>Emptying the Detector Early</h3>
+                <p>Using all 40 pulses in the first five minutes leaves you with no way to locate the statue in the final stretch. The signal only spikes late. Pace your scans.</p>
+            </div>
+            <div class="mistake-card">
+                <span class="icon" aria-hidden="true">🥖</span>
+                <h3>Rushing the Oven</h3>
+                <p>A rushed loaf is 5 coins instead of 12. Over a full run that's a difference of 20 to 30 coins — enough to miss the lucky charm that would have saved your next attempt.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">📊</span> Run Breakdown: What Happens in a Typical 12-Minute Session</h2>
+        <p class="section-sub">A well-paced run follows a predictable rhythm. Knowing the phases helps you plan your movement and your scans.</p>
+
+        <div class="table-wrap" style="overflow-x:auto; margin:30px 0; border-radius:18px; border:1px solid rgba(168,85,247,0.25); box-shadow:0 8px 40px rgba(255,45,149,0.1);">
+            <table style="width:100%; border-collapse:collapse; font-size:0.92rem;">
+                <thead style="background:linear-gradient(135deg,#ff2d95 0%,#a855f7 50%,#00e5ff 100%);">
+                    <tr>
+                        <th style="padding:16px 20px; text-align:left; font-family:'Orbitron',sans-serif; font-weight:800; font-size:0.82rem; color:#fff; white-space:nowrap; letter-spacing:0.5px; text-transform:uppercase;">Phase</th>
+                        <th style="padding:16px 20px; text-align:left; font-family:'Orbitron',sans-serif; font-weight:800; font-size:0.82rem; color:#fff; white-space:nowrap; letter-spacing:0.5px; text-transform:uppercase;">Time</th>
+                        <th style="padding:16px 20px; text-align:left; font-family:'Orbitron',sans-serif; font-weight:800; font-size:0.82rem; color:#fff; white-space:nowrap; letter-spacing:0.5px; text-transform:uppercase;">Primary Goal</th>
+                        <th style="padding:16px 20px; text-align:left; font-family:'Orbitron',sans-serif; font-weight:800; font-size:0.82rem; color:#fff; white-space:nowrap; letter-spacing:0.5px; text-transform:uppercase;">Detector Budget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom:1px solid rgba(168,85,247,0.12);">
+                        <td style="padding:14px 20px; color:#ffc800; font-weight:700;">Opening</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">0–4 min</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">Bake first batch of bread. Learn patrol direction.</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">0–5 pulses</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid rgba(168,85,247,0.12); background:rgba(168,85,247,0.04);">
+                        <td style="padding:14px 20px; color:#ffc800; font-weight:700;">Mid-Run</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">4–9 min</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">Scan for nearby relics. Sell bread. Buy tools if needed.</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">15–20 pulses</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:14px 20px; color:#ffc800; font-weight:700;">Final Stretch</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">9–15 min</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">Locate Golden Statue. Dig. Return to truck.</td>
+                        <td style="padding:14px 20px; color:#d0d0e8;">10–15 pulses saved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title"><span class="title-emoji" aria-hidden="true">❓</span> Quick Answers</h2>
+
+        <div class="faq-item" style="background:linear-gradient(160deg,#1a0d35 0%,#14082c 100%); border:1px solid rgba(168,85,247,0.2); border-radius:16px; margin-bottom:14px; overflow:hidden;">
+            <button type="button" class="faq-q" style="width:100%; padding:20px 24px; font-family:'Orbitron',sans-serif; font-weight:700; font-size:0.88rem; color:#fff; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:transparent; border:none; text-align:left;" aria-expanded="false" onclick="toggleFaq(this)">
+                Can I play with a controller?
+                <span class="arrow" style="color:#ff2d95; font-size:1.3rem; font-weight:900;" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.3s; padding:0 24px; color:#a8a8c8; font-size:0.92rem;">
+                <p>The browser version uses keyboard and mouse. The mobile app version supports touch controls only. No controller support is available for either version.</p>
+            </div>
+        </div>
+        <div class="faq-item" style="background:linear-gradient(160deg,#1a0d35 0%,#14082c 100%); border:1px solid rgba(168,85,247,0.2); border-radius:16px; margin-bottom:14px; overflow:hidden;">
+            <button type="button" class="faq-q" style="width:100%; padding:20px 24px; font-family:'Orbitron',sans-serif; font-weight:700; font-size:0.88rem; color:#fff; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:transparent; border:none; text-align:left;" aria-expanded="false" onclick="toggleFaq(this)">
+                What happens if I get caught?
+                <span class="arrow" style="color:#ff2d95; font-size:1.3rem; font-weight:900;" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.3s; padding:0 24px; color:#a8a8c8; font-size:0.92rem;">
+                <p>You lose one of your three lives and respawn at the truck. If you lose all three, the run ends and you keep your coins for upgrades.</p>
+            </div>
+        </div>
+        <div class="faq-item" style="background:linear-gradient(160deg,#1a0d35 0%,#14082c 100%); border:1px solid rgba(168,85,247,0.2); border-radius:16px; margin-bottom:14px; overflow:hidden;">
+            <button type="button" class="faq-q" style="width:100%; padding:20px 24px; font-family:'Orbitron',sans-serif; font-weight:700; font-size:0.88rem; color:#fff; cursor:pointer; display:flex; justify-content:space-between; align-items:center; background:transparent; border:none; text-align:left;" aria-expanded="false" onclick="toggleFaq(this)">
+                Is there a way to distract the kentongan?
+                <span class="arrow" style="color:#ff2d95; font-size:1.3rem; font-weight:900;" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-a" style="max-height:0; overflow:hidden; transition:max-height 0.4s ease, padding 0.3s; padding:0 24px; color:#a8a8c8; font-size:0.92rem;">
+                <p>Yes. Dropping an item creates a sound the kentongan investigates. This is useful for redirecting the patrol away from your dig site. The distraction lasts roughly 10 seconds.</p>
+            </div>
+        </div>
+
+        <a href="/faq/" class="back-link" style="display:block; text-align:center; margin:20px auto 0; font-family:'Orbitron',sans-serif; font-weight:700; font-size:0.9rem; color:#00e5ff;">❓ View Full FAQ →</a>
+
+        <a href="/" class="back-link" style="display:block; text-align:center; margin:30px auto 0; font-family:'Orbitron',sans-serif; font-weight:700; font-size:0.9rem; color:#00e5ff;">← Back to Home</a>
+
+        <div class="disclaimer" style="max-width:900px; margin:40px auto; padding:20px 24px; background:rgba(168,85,247,0.08); border:1px solid rgba(168,85,247,0.25); border-radius:14px; text-align:center; font-size:0.82rem; color:#9090a8; line-height:1.6;">
+            <p><strong>Disclaimer:</strong> This is an unofficial fan site. Tung Tung Tung Sahur and all related characters, names, and game content are the property of their respective creators and studios. This site is not affiliated with, endorsed by, or sponsored by any of them. All trademarks and copyrights belong to their owners.</p>
+        </div>
+
+    </main>
+
+    <button type="button" class="to-top" id="toTop" aria-label="Scroll back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+    <footer aria-label="Site footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>🎮 Game</h4>
+                <ul>
+                    <li><a href="/">🏠 Home</a></li>
+                    <li><a href="/about/">📖 About</a></li>
+                    <li><a href="/how-to-play/">🎮 How to Play</a></li>
+                    <li><a href="/tips/">💡 Tips</a></li>
+                    <li><a href="/achievements/">🏆 Achievements</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>👹 Universe</h4>
+                <ul>
+                    <li><a href="/characters/">👹 Characters</a></li>
+                    <li><a href="/locations/">🗺️ Locations</a></li>
+                    <li><a href="/items/">🎒 Items</a></li>
+                    <li><a href="/memes/">😂 Memes</a></li>
+                    <li><a href="/music/">🎵 Music</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>🎯 Similar</h4>
+                <ul>
+                    <li><a href="/similar-games/backrooms-escape/">🚪 Backrooms</a></li>
+                    <li><a href="/similar-games/granny-adventure/">👵 Granny</a></li>
+                    <li><a href="/similar-games/fnaf/">🐻 FNAF</a></li>
+                    <li><a href="/similar-games/steal-a-brainrot/">🦹 Steal a Brainrot</a></li>
+                    <li><a href="/similar-games/italian-brainrot-quiz/">🧠 Brainrot Quiz</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>📂 Info</h4>
+                <ul>
+                    <li><a href="/faq/">❓ FAQ</a></li>
+                    <li><a href="/glossary/">📚 Glossary</a></li>
+                    <li><a href="/updates/">🔄 Updates</a></li>
+                    <li><a href="/comparison/">📊 Comparison</a></li>
+                    <li><a href="/privacy/">🔒 Privacy Policy</a></li>
+                    <li><a href="/terms/">📜 Terms of Service</a></li>
+                    <li><a href="/disclaimer/">⚖️ Disclaimer</a></li>
+                    <li><a href="/contact/">📧 Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Tung Tung Tung Sahur: Brainrot Adventure Universe. All game content belongs to its respective creators.</p>
+            <p>This is an unofficial fan site and is not affiliated with any game developer or publisher.</p>
+        </div>
+    
+<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
+target="_blank"><img id="licntE915" width="0" height="0" style="border:0"
+title="LiveInternet"
+src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+alt=""/></a><script>(function(d,s){d.getElementById("licntE915").src=
+"https://counter.yadro.ru/hit?t38.1;r"+escape(d.referrer)+
+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+";h"+escape(d.title.substring(0,150))+";"+Math.random()})
+(document,screen)</script><!--/LiveInternet--><br><br><br><br>
+</footer>
+
+    <script>
+        function toggleFaq(btn) {
+            var item = btn.parentElement;
+            var isOpen = item.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            var answer = item.querySelector('.faq-a');
+            if (isOpen) {
+                answer.style.maxHeight = '300px';
+                answer.style.padding = '0 24px 22px';
+            } else {
+                answer.style.maxHeight = '0';
+                answer.style.padding = '0 24px';
+            }
+        }
+
+        var mobileToggle = document.getElementById('mobileToggle');
+        var mainNav = document.getElementById('mainNav');
+        mobileToggle.addEventListener('click', function() {
+            var ul = mainNav.querySelector('ul');
+            var isOpen = ul.classList.toggle('show');
+            mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            mobileToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+        });
+
+        document.querySelectorAll('nav ul li a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 900) {
+                    document.querySelector('nav ul').classList.remove('show');
+                    mobileToggle.setAttribute('aria-expanded', 'false');
+                    mobileToggle.setAttribute('aria-label', 'Open navigation menu');
+                }
+            });
+        });
+
+        document.querySelectorAll('.dropdown > a').forEach(function(trigger) {
+            trigger.addEventListener('click', function(e) {
+                if (window.innerWidth > 900) return;
+                e.preventDefault();
+                var parent = this.parentElement;
+                parent.classList.toggle('open');
+                this.setAttribute('aria-expanded', parent.classList.contains('open') ? 'true' : 'false');
+            });
+        });
+
+        var toTop = document.getElementById('toTop');
+        var scrollTick = false;
+        window.addEventListener('scroll', function() {
+            if (!scrollTick) {
+                window.requestAnimationFrame(function() {
+                    if (window.scrollY > 500) toTop.classList.add('visible');
+                    else toTop.classList.remove('visible');
+                    scrollTick = false;
+                });
+                scrollTick = true;
+            }
+        }, { passive: true });
+    </script>
+
+<script>
+        document.querySelectorAll('.more-toggle').forEach(function(trigger) {
+            var parent = trigger.parentElement;
+            function closeMore() { parent.classList.remove('open'); trigger.setAttribute('aria-expanded', 'false'); }
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+                parent.classList.toggle('open');
+                trigger.setAttribute('aria-expanded', parent.classList.contains('open') ? 'true' : 'false');
+            });
+            document.addEventListener('click', function(e) { if (!parent.contains(e.target)) closeMore(); });
+            document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && parent.classList.contains('open')) { closeMore(); trigger.focus(); } });
+        });
+</script>
+</body>
+</html>
