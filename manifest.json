@@ -1,0 +1,84 @@
+{
+    "name": "Tung Tung Tung Sahur — Fan Site",
+    "short_name": "TTT Sahur",
+    "description": "Play Tung Tung Sahur free in your browser. Guides, characters, locations, and the complete history of the viral Indonesian meme.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#0d0620",
+    "theme_color": "#0d0620",
+    "lang": "en",
+    "dir": "ltr",
+    "categories": ["games", "entertainment", "reference"],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/images/icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/images/og-image.png",
+            "sizes": "1200x630",
+            "type": "image/png",
+            "form_factor": "wide"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Play Game",
+            "short_name": "Play",
+            "description": "Jump straight into the browser game",
+            "url": "/#play",
+            "icons": [
+                {
+                    "src": "/images/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "How to Play",
+            "short_name": "Guide",
+            "description": "Full controls and mechanics guide",
+            "url": "/how-to-play/",
+            "icons": [
+                {
+                    "src": "/images/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Characters",
+            "short_name": "Characters",
+            "description": "Every brainrot character profile",
+            "url": "/characters/",
+            "icons": [
+                {
+                    "src": "/images/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}
